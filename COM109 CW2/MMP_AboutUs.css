@@ -1,0 +1,164 @@
+/* CSS for the background */
+
+body{
+    background-image: url(grey-white.jpg);
+    background-size: 1000px;
+}
+
+/* Like the Home page, this is CSS for the navigation bar in AboutUs */
+
+.navigation{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    width: 1440px;
+    text-align: center;
+    padding: 12px 14px;
+    overflow: hidden;
+    background-color: #e9e9e9
+    
+}
+
+.HomePage{
+    font-size: 30px;
+    background-color: lightcoral;
+    color: black;
+    font-style: bold;
+    margin-right: 20px;
+}
+
+.AboutPage{
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: black;
+    font-style: bold;
+    margin-left: 20px;
+}
+
+.ContactPage{
+    font-size: 30px;
+    background-color: lightgreen;
+    color: black;
+    font-style: bold;
+    margin-left: 40px;
+}
+
+.logo1{
+    margin-right: 20px;
+}
+
+.logo2{
+    margin-left: 20px;
+}
+
+h1{
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.history{
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+.services{
+    font-size: 19px;
+}
+
+/* CSS properties for my table which displays the various PT lessons */
+
+#whatweoffer th, td{
+    border: 3px solid;
+    font-size: 20px;
+}
+
+#whatweoffer th{
+    font-size: 30px;
+}
+
+/* These properties are for the buttons onthe whatweoffer table */
+
+.bookindividual{
+    color: red;
+    font-size: 15px;
+}
+
+.bookindividual:active{
+transform: translateY(4px);
+background-color: rgb(226, 128, 128);
+}
+
+.bookgroup{
+    color: red;
+    font-size: 15px;
+}
+
+.bookgroup:active{
+    transform: translateY(4px);
+    background-color: rgb(226, 128, 128);
+}
+
+.onlineindividual{
+    color: rgb(0, 0, 255);
+    font-size: 15px;
+}
+
+.onlineindividual:active{
+    transform: translateY(4px);
+    background-color: rgb(96, 67, 227);
+}
+
+.onlinegroup{
+    color: blue;
+    font-size: 15px;
+}
+
+.onlinegroup:active{
+    transform: translateY(4px);
+    background-color: rgb(96, 67, 227);
+}
+
+/* CSS for the button and the images that fade in when the button is clicked */
+
+.imagebutton{
+    width: 200px;
+    height: 80px;
+    font-size: larger;
+    font-style: italic;
+    color: rgb(2, 105, 2);
+}
+
+.imagebutton:active{
+    transform: translateY(5px);
+    background-color: rgb(14, 200, 14);
+}
+
+#dumbbell{
+    display: none;
+    margin-left: 260px;
+}
+
+#sauna{
+    display: none;
+    margin-top: 40px;
+}
+
+#PersonalTrainer{
+    display: none;
+    margin-left: 300px;
+}
+
+#Cookstown{
+    display: none;
+    margin-left: 80px;
+}
+
+.abovetable{
+    color: gold;
+    font-size: 24px;
+    font-style: bold;
+    padding: 12px 14px;
+}

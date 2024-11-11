@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en-UK">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-deice-width, inital-scale=1.0">
+
+    <link rel="stylesheet" href="MMP_AboutUs.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="MMP_AboutUs.js"></script>
+
+    <title> McKinless Max Perfomance - About Us </title>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="navigation">
+        <img src="MMP_logo.png" height="200" width="200" class="logo1" alt="McKinless Max Performance logo">
+        <a class="HomePage" href="MMP_home.html"> Home </a>
+        <a class="AboutPage" href="MMP_AboutUs.html"> About Us </a>
+        <a class="ContactPage" href="MMP_contact.html"> Contact Us </a>
+        <img src="MMP_logo.png" height="200" width="200" class="logo2" alt="McKinless Max Performance logo">
+        <p>current date and time is:   <span id="datetime"></span>.</p>
+    </div>
+
+
+    <h1> McKinless Max Performance - About Us </h1>
+
+    <script>
+        //the current date and time
+        const d = new Date();
+        document.getElementById("datetime").innerHTML = d;
+    </script>
+        
+        <!-- A brief overview of McKinless Max Performance-->
+        <p class="history"> McKinless Max Performance was founded in 2022 by Matthew McKinless with his aim to ensure that more people in the local area are keeping fit. Matthew and
+            3 other qualified personal trainers work to get the best out of our clients. The main gym was opened up in Cookstown in 2022 with this goal in mind. 
+            People come here regularly for in-person individual and group sessions. Online sessions via Zoom are also available for clients who prefer them. </p>
+
+        <p class="history"> Our goal is to make YOU fitter and healthier; We also aim to give our clients a better mindset on life and nutritional advice.</p>
+
+        <h2> Our services; We offer.. </h2>
+
+        <p class="services"> A Gym with world class facilities + equipment including dumbbells, benches, treadmills, gym bikes and leg extensions. </p>
+        <p class="services"> Complete with a sauna, changing facilities, showers and toilets alongside an accessible location in Cookstown. </p>  
+        <p class="services"> Qualified personal trainers who only want the best for you! </p> 
+        <p class="services"> Expert nutritional advice! This includes diet plans and suggestions to tweak your current diet, ensuring the best performace out of our clients.</p> 
+
+            <!-- this is a jquery function that will reveal some images that display the services McKinless Max Performance offers-->
+        <div>
+            <button class="imagebutton"> Here's some pictures of our top-quality services! </button>
+        </div>
+
+        <div>
+            <img src="Sauna.jpg" height="160" id="sauna" alt="Our personal sauna for the perfext relaxation after a challenging workout!!">
+            <img src="personal_trainer.jpg" height="160" id="PersonalTrainer" alt="Highly qualified personal trainers who will give you the best workout possible!">
+            <img src="Cookstown.jpg" height="160" id="Cookstown" alt="A location in the middle of Cookstown, perfect for handy journeys!">
+            <img src="green_gym.jpg" height="160" id="dumbbell" alt="The various weights available at the Max Performance Gym!"> 
+        </div>
+
+                <p class="abovetable"> Below is some information about the sessions we have available for clients </p>
+
+            <!--A table that displays the lessons on offer, with the ability for clients to book lessons-->
+            <!-- Users will be taken to a page where they will see details of the lesson they booked-->
+            <table id="whatweoffer">
+            <tr>
+                <th> Session </th>
+                <th> Details </th>
+                <th> Price </th>
+                <th> Booking </th>
+            </tr>
+            <tr>
+                <td> Individual In-Person Session </td>
+                <td> An in-person PT service that involves travelling to our gym in 61 Fairhill Rd, Cookstown for your session, these sessions will be personalised 
+                    to suit your individual needs. Get access to our world class gym equipment and facilities and be constantly tested at every turn!</td>
+                <td> £10.99 (first session is half price!) </td>
+                <td> <button class="bookindividual" size="50" onclick="window.location.href = 'http://localhost/COM109%20CW2/booking.html';"> Book an indiviual in-person session now! </td>
+            </tr>
+            <tr>
+                <td> Group In-Person Session </td>
+                <td> Bring some friends along too! Work out in groups with one of our Personal Trainers as you get fitter and stronger. Sessions may be more competitive
+                    in nature as you strive to perform as best as you can in our sessions while competing against others!. </td>
+                <td>£8.99 per person (first session 30% off)</td>
+                <td> <button class="bookgroup" size="50" onclick="window.location.href = 'http://localhost/COM109%20CW2/booking.html';" > Book a group in-person session now! </button> </td>
+            </tr>
+            <tr>
+                <td> Online Individual Session </td>
+                <td>If you prefer to have your workouts online then we can cater to that. Our online PT sessions offer workouts from the comfort of
+                    your home! These sessions cater to your needs and can be done regardless of what equipment you have at your home.  </td>
+                <td> £9.99 per person </td>
+                <td> <button class="onlineindividual" size="50" onclick="window.location.href = 'http://localhost/COM109%20CW2/online_booking.html';"> Book an online individual session now! </button></td>
+            </tr>
+            <tr>
+                <td> Online Group Session </td>
+                <td>We also offer online group sessions with a maximum of 4 people per session (ensure that you have a secure internet conenction for this). These are exactly
+                    like the individual online sessions only with the added benefit of having more people. </td>
+                <td> £7.99 per person </td>
+                <td> <button class="onlinegroup" size="50" onclick="window.location.href = 'http://localhost/COM109%20CW2/online_booking.html';"> Book an online group session now! </button></td>
+            </tr>
+
+            </tr>
+            </table>
+
+</body>
+</html>

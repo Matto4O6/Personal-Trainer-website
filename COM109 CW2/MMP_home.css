@@ -1,0 +1,249 @@
+/* CSS for the background */
+body{
+    background-image: url(background-with-sweat.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@import url("https://ico.org.uk/for-the-public/online/cookies/");
+
+.container{
+    width: 1500px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 80%;
+    margin: auto;
+}
+
+/* CSS for my cookies */
+
+#WebCookies{
+    width: 100%;
+    position: fixed;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    display: none; 
+}
+
+.WebCookies{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.WebCookies a{
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.WebCookies-btn{
+    border-radius: 4px;
+    padding: 8px 12px 8px 12px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border: 3px white;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 1500px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px){
+    .WebCookies{
+        padding: 10px 0;
+    }
+}
+
+.h1{
+    color: red;
+    text-align: center;
+}
+
+/* This CSS if for my navigation bar at the top of the webpage, for Home, AboutUs and Contact Us */
+
+.navigation{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    width: 1440px;
+    text-align: center;
+    padding: 12px 14px;
+    overflow: hidden;
+    background-color: #e9e9e9
+}
+
+.HomePage{
+    font-size: 30px;
+    background-color: lightcoral;
+    color: black;
+    font-style: bold;
+    margin-right: 20px;
+}
+
+.AboutPage{
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: black;
+    font-style: bold;
+    margin-left: 20px;
+}
+
+.ContactPage{
+    font-size: 30px;
+    background-color: lightgreen;
+    color: black;
+    font-style: bold;
+    margin-left: 40px;
+}
+
+.logo1{
+    margin-right: 20px;
+}
+
+.logo2{
+    margin-left: 20px;
+}
+
+h1{
+    color: lightcoral;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 32px;
+    font-style: bold;
+    color: white;
+}
+
+.description{
+    font-size: 20px;
+    color: white;
+}
+
+.now{
+    color: red;
+    margin-left: 200px;
+    padding: 20px 18px;
+    width: 600px;
+    height: 80px;
+    font-style: bold;
+    font-size: x-large;
+}
+
+.ClickMap{
+    color: white;
+    font-size: larger;
+}
+
+.exercise-search{
+    width: 500px;
+    background: silver;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* map and image at the bottom */
+
+.MMPLocation{
+    margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+}
+
+.shreddedman{
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* The next CSS properties for my autocomplete search bar */
+
+.exercise-search{
+    width: 500px;
+    background: silver;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: black;
+}
+
+.exercise-button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.label{ 
+    font-size: 0; 
+}
+
+label:before { content: "Search here for the variety of exercises on offer: "; 
+    font-size: 20px; 
+    color: white;
+    font-style: italic;
+}
+
+.exercise-results ul{
+    border-top: 1px solid white;
+    padding: 12px 8px;
+}
+
+.exercise-result ul li{
+    list-style: none;
+    border-radius: 2px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+
+.exercise-result ul li:hover{
+    background: white;
+}

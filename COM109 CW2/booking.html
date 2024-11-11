@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <html lang="en-UK">
+        <meta charset="UTF-8">
+        <meta viewport="width-deice-width">
+
+        <link rel="stylesheet" href="booking.css">
+
+        <script src="booking.js"></script>
+
+    </head>
+    <body>
+        
+        <p class="thanks"> Thanks for your booking with McKinless Max Performance. Click the buttons below to find out more about your lesson. We hope you enjoy your in-person session.</p>
+
+        <!-- Buttons that, when clicked, reveal details about the booked lesson-->
+        <button onclick="lesson()" id="session"> Session overview: </button>
+        <p id="lesson"></p>
+
+        <button onclick="date()" id="day"> Date of your session </button>
+        <p id="date"></p>
+        
+        <button onclick="time()" id="thetime">Find out the time of your session!</button>
+        <p id="time"></p>
+
+        <button onclick="Trainer()" id="PT"> Your personal trainer for this session is...</button>
+        <p id="trainer"></p>
+
+        <button onclick="Place()" id="location"> Location is..</button>
+        <p id="place"></p>
+        
+    </body>
+</html>

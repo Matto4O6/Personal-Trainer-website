@@ -1,0 +1,184 @@
+/* body CSS for the page background */
+
+body{
+    background-image: url(gym_background.jpg);
+    background-size: 100%;
+}
+
+/* CSS for the navigation bar which is similar to my other webpages */
+
+.navigation{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    width: 1440px;
+    text-align: center;
+    padding: 12px 14px;
+    overflow: hidden;
+    background-color: #e9e9e9
+    
+}
+
+.HomePage{
+    font-size: 30px;
+    background-color: lightcoral;
+    color: black;
+    font-style: bold;
+    margin-right: 20px;
+}
+
+.AboutPage{
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: black;
+    font-style: bold;
+    margin-left: 20px;
+}
+
+.ContactPage{
+    font-size: 30px;
+    background-color: lightgreen;
+    color: black;
+    font-style: bold;
+    margin-left: 40px;
+}
+
+.logo1{
+    margin-right: 20px;
+}
+
+.logo2{
+    margin-left: 20px;
+}
+
+h1{
+    color: lightgreen;
+}
+
+/* All the CSS properties for the sign up form
+which outlines the size of the textboxes and the buttons as well as the colour of the button text  */
+
+.intouch{
+    font-size: 18px;
+}
+
+.fields{
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+}
+
+.textbox{
+    font-size: larger;
+    margin-left: 450px;
+}
+
+.signup{
+    margin-left: 450px;
+    font-size: 30px;
+}
+
+.submittext{
+    font-size: 20px;
+}
+
+.resettext{
+    font-size: 20px;
+}
+
+/* CSS for the PT preference buttons which aren't linked to the sign up form */
+
+.In-Person{
+    height: 100px;
+    width: 100px;
+    font-size: larger;
+    margin-left: 500px;
+    color: red;
+}
+
+.In-Person:active{
+    background-color: lightcoral;
+    transform: translateY(6px);
+}
+
+.Online{
+    height: 100px;
+    width: 100px;
+    font-size: larger;
+    margin-left: 200px;
+    color: blue;
+}
+
+.Online:active{
+    background-color: cyan;
+    transform: translateY(6px);
+}
+
+.PTService{
+    margin-left: 530px;
+    font-size: large;
+}
+
+/* The CSS for the form submission buttons */
+
+.Submit{
+    font-size: larger;
+    height: 50px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 380px;
+    color: green;
+}
+
+.Submit:active{
+    background-color: lightgreen;
+    transform: translateY(4px);
+}
+
+.Undo{
+    font-size: larger;
+    height: 50px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 130px;
+    color: red;
+}
+
+.Undo:active{
+    background-color: lightcoral;
+    transform: translateY(4px);
+}
+
+/* CSS properties for Darren and the text regarding his experiecne with MMP */
+
+.Darrenexp{
+    font-style: bold;
+    font-size: x-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 'Open Sans';
+}
+
+.thoughts{
+    font-size: 18px;
+}
+
+.runningman{
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.run{
+    margin-top: 30px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+.gender{
+    font-size: larger;
+    margin-right: 450px; 
+}

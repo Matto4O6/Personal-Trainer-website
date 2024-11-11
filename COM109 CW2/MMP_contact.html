@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<meta charset="UTF-8">
+<meta viewport="width-deice-width">
+
+<head>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
+	<link rel="stylesheet" href="MMP_contact.css">
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="MMP_contact.js"></script>
+
+    <title> McKinless Max Performance - Contact Us </title>
+</head>
+
+<body>
+	<!--navigation bar present on the other pages-->
+	<div class="navigation">
+		<img src="MMP_logo.png" height="200" width="200" class="logo1" alt="McKinless Max Performance logo">
+        <a class="HomePage" href="MMP_home.html"> Home </a>
+        <a class="AboutPage" href="MMP_AboutUs.html"> About Us </a>
+        <a class="ContactPage" href="MMP_contact.html"> Contact Us </a>
+		<img src="MMP_logo.png" height="200" width="200" class="logo2" alt="McKinless Max Performance logo">
+		<p>current date and time is:   <span id="datetime"></span>.</p>
+    </div>
+
+
+    <h1> McKinless Max Performance - Contact Us </h1>
+
+	<script>
+		// date and time like in the home page
+        const d = new Date();
+        document.getElementById("datetime").innerHTML = d;
+    </script>
+
+
+    <p class="intouch"> Are you interested in signing up to McKinless Max Performance? Get in touch with us now by entering your contact details below to become a member!. If you have any questions
+		or concerns, we'd love to hear from you.
+	</p>
+
+	<!-- A contact form for users to sign up for McKinless Max Performance, details are submitted with the 'Submit' button-->
+    <div>
+		<form>
+			<form id="signupMMP" name= "Sign up to McKinless Max Performance" onsubmit="return Validation()">
+				<!--form action will send customer information to a separate file-->
+			<form action="customer_information.file" target="_blank" method="post">
+
+				<h2 class="signup"><bold> Sign up to McKinless Max Performance </details></bold></h2>
+			
+				<p class="fields"> First name </p>
+				<input type="text" class="textbox required" id="Firstname" size="50" placeholder="First name" maxlength="20" required>
+	
+				<p class="fields"> Surname </p>
+				<input type="text" class="textbox" id="Surname" placeholder="Surname" maxlength size ="50">
+	
+				<p class="fields"> Phone number </p>
+				<input type="tel" class="textbox required" id="phone" placeholder="07512746093" size="11" maxlength="11" required>
+	
+				<p class="fields"> Email address </p>
+				<input type="email" class="textbox required email" id="email" size="50" maxlength="40" placeholder="member@gmail.com" required>
+
+				<p class="fields"> Verify Email </p>
+				<input type="email" class="textbox required email" id="verify_email" size="50" maxlength="40" placeholder="member@gmail.com" required>
+
+				<p class="fields"> Password </p>
+				<input type="password"  class="textbox required" id="password" size="50" minlength="6" maxlength="20" required>
+
+				<p class="fields"> Verify Password </p>
+				<input type="password"  class="textbox required" id="verify_password" size="50" minlength="6" maxlength="20" required>
+
+				<p class="sexuality"> Gender </p>
+				<input type="radio" name="gender" class="sexuality" /> Male  <input type="radio" name="gender" class="sexuality" /> Female 
+
+				<br> 
+				
+				<input type="radio" name="gender" class="sexuality" /> Non-Binary <input type="radio" name="gender" class="sexuality" /> Prefer not to say
+
+				<p class="check"> Do you want to recieve information and updates on McKinless Max Performance through our monthly newsletter? </p> <input type="checkbox">
+		</div>
+
+		<button class="Submit" size="50" onclick="Submit()"> Submit </button>
+		
+		<button class="Undo" size="50" onclick="Undo()"> Undo </button>
+
+		</form>
+	</div>
+
+	<div>
+		<!--buttons to see user preference of workouts, popups appear when clicked-->
+		<p class="PTService"> What Personal Training service do you prefer? </p>
+
+        <button class="In-Person" size="50" onclick="InPerson()"> In-Person </button> <button class="Online" size="50" onclick="Online()"> Online </button>
+	</div>
+
+		<!--When clicked, this button will move Darren Mukiele to the left, while also increasing his height and width-->
+		<div>
+			<button class="run" size="50"> Click here to see this guy train like you will at McKinless Max Performance! </button>
+		</div>
+
+		<!--Some information about Darren Mukiele, a regular client at McKinless Max Performance-->
+
+		<p> His name is Darren Mukiele and we've kept track of his progress after he started training with McKinless Max Performance in 2023. After a year 
+			of training he has become a bigger, better and stronger man. Darren is also in a much better mental state than before he joined us. 
+			(click on Darren to learn more about the different between endurance and stamina)
+		</p>
+
+		<p class="Darrenexp"> "I was previously unsatisfied with my weight and felt depressed when going outside, I was nervous about joining McKinless Max Performance as I felt intimidated about gyms as a whole. But 
+			McKinless Max Performance respected me and made me feel welcome. I was determined and a year later I'm a completely different man. I'm fitter and stronger
+			both physically and mentally with a new, healthier diet as well"
+		</p>
+
+		<p class="thoughts"> - Darren commenting on his experience with McKinless Max Performance, 1 year after starting with us </p>
+
+		<p> You can be like Darren if you sign up and purchase sessions now! </p>
+
+		<!--Links to an article and images of Darren and a runnung track-->
+		<div>
+			<a href="https://www.healthline.com/health/exercise-fitness/endurance-vs-stamina#endurance-vs-stamina">
+			<img src="runnning_man.jpg" class="runningman" height="160" width="130" alt="Training the speed and stamina">
+			<img src="track_and_run.jpg" class="track+run" height="50" width="1540" alt="One of our practice track fields">
+		</div>
+
+</body>
+</html>
