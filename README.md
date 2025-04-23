@@ -4,3 +4,5 @@ This is a website for a hypothetical Personal Trainer business. It contains 3 ma
 There are also 2 extra pages for booking in-prson and group lessons. 
 
 There is a navigation bar at the top of each page that users can use to navigate to the 3 main pages. 
+A sign up form is present in the 'Contact Us' page that registers user email addresses.
+javaScript pop-ups are present to detect any user input errors.
